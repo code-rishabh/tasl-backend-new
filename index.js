@@ -31,6 +31,6 @@ app.use("/api/v2", require('./apis/v2/routers/guides'));
 
 
 
-app.listen(3000,'10.90.40.52', () => {
+app.listen(3000, () => {
   console.log('Server is running on port 3001');
 });
