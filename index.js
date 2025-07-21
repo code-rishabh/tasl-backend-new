@@ -3,6 +3,7 @@ const connectToMongoose = require('./apis/v1/db/db');
 const app = express();
 const cors = require('cors');
 const fs = require('fs')
+const PORT = 3000
 app.use(cors());
 
 
@@ -31,6 +32,6 @@ app.use("/api/v2", require('./apis/v2/routers/guides'));
 
 
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3001');
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
